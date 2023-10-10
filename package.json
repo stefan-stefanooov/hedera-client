@@ -1,19 +1,26 @@
 {
   "name": "hedera-client",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "examples of using hedera",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "npx nodemon",
-    "start": "npx tsc && node dist/index.js"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@tsconfig/node-lts": "^18.12.5",
     "@types/node": "^20.8.2",
+    "hardhat": "^2.18.0",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@hashgraph/sdk": "^2.35.0",
+    "dotenv": "^16.3.1",
+    "loading-cli": "^1.1.0",
+    "ora": "^7.0.1"
   }
 }
